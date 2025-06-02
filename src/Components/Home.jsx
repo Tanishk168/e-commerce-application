@@ -43,7 +43,7 @@ console.log(products);
       <Nav></Nav>
 
       {/* product section on right */}
-      <div className=" w-[70%] lg:w-[85%]  h-full lg:p-5 p-2 bg-red-100 pt-[5%] lg:pl-8 flex flex-wrap gap-2 overflow-y-auto overflow-x-hidden">
+      <div className=" w-2xl lg:w-[85%]  h-full lg:p-5 pl-2 bg-red-100 pt-[5%] lg:pl-8 flex flex-wrap gap-2 overflow-y-auto overflow-x-hidden">
         {/* Cards */}
         {filteredProducts && 
         filteredProducts.map((p, i) => {
@@ -51,7 +51,7 @@ console.log(products);
             <Link
               key={p.id}
               to={`/detail/${p.id}`}
-              className="card p-5  w-[70%] sm:w-[45%] md:w-[30%] lg:w-[18%] h-[40%] rounded-lg shadow  border flex-col flex justify-center items-center bg-white overflow-hidden"
+              className="card p-5  w-[90%] sm:w-[45%] md:w-[30%] lg:w-[18%] h-[40%] rounded-lg shadow  border flex-col flex justify-center items-center bg-white overflow-hidden"
             >
               <div
                 className=" w-full h-[70%] flex-shrink-0 bg-contain bg-no-repeat hover:scale-110  m-2 "

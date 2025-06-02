@@ -12,7 +12,7 @@ console.log("distinct categories is :",distinct_category);
     <div className="w-[30%] lg:w-[15%] h-full bg-zinc-100 flex flex-col items-center pt-5">
     <a
       href="/create"
-      className="border border-blue-400 bg-blue-200 px-4 py-3 rounded-full text-red-300 font-semibold"
+      className="border border-blue-400 bg-blue-200 px-2 py-3 rounded-full text-red-400 font-semibold mx-2"
     >
       Add New Product
     </a>
@@ -21,8 +21,8 @@ console.log("distinct categories is :",distinct_category);
     <div className=" w-[80%]">
 
       {distinct_category.map((category,index) => (
-          <Link to={`/?category=${category}`} key={index} className="flex items-center bg-red-100 px-2 py-1 my-2">
-          <span style={{backgroundColor:`rgba( ${(Math.random()*255).toFixed()} , ${(Math.random()*255).toFixed()} , ${(Math.random()*255).toFixed()} , 0.7)`}} className="bg-blue-300 rounded-full mr-2 w-[15px] h-[15px]"></span>
+          <Link to={`/?category=${category}`} key={index} className="flex overflow-hidden items-center bg-red-100 px-2 py-1 my-2">
+          <span style={{backgroundColor:`rgba( ${(Math.random()*255).toFixed()} , ${(Math.random()*255).toFixed()} , ${(Math.random()*255).toFixed()} , 0.7)`}} className="w-3 h-3 rounded-full mr-1 shrink-0 inline-block"></span>
           {category.charAt(0).toUpperCase() + category.slice(1)}
         </Link>
       )   )}
